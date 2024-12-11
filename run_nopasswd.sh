@@ -24,7 +24,7 @@ fi
  
 /opt/TurboVNC/bin/vncserver -kill :9
 #/opt/TurboVNC/bin/vncserver :9 -wm /usr/bin/xfce4-session
-/opt/TurboVNC/bin/vncserver :9 -wm /usr/bin/xfce4-session -SecurityTypes None -geometry 1280x720
+/opt/TurboVNC/bin/vncserver :9 -wm /usr/bin/xfce4-session -SecurityTypes None -geometry 1280x800
 #/opt/TurboVNC/bin/vncserver :9 -SecurityTypes None -geometry 1280x720
  
  

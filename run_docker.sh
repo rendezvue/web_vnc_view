@@ -7,7 +7,7 @@ ENVS="--env=QT_X11_NO_MITSHM=1
 
          #--volume=/home/$USER/rdv_hermai_ws/data/backup:/root/catkin_ws/src/rdv_amr_3d/data/backup:rw"
 XSOCK=/tmp/.X11-unix
-XAUTH=$HOME/.Xauthority
+XAUTH=/root/.Xauthority
 VOLUMES="--volume=$XSOCK:$XSOCK:rw
          --volume=$XAUTH:/root/.Xauthority:rw
          --volume=/dev:/dev:ro"
@@ -16,7 +16,7 @@ VOLUMES="--volume=$XSOCK:$XSOCK:rw
     #--entrypoint /bin/bash \
 docker run \
     -d \
-    --restart always \
+    --restart unless-stopped \
     $ENVS \
     $VOLUMES \
     --privileged \
