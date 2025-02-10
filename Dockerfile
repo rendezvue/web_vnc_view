@@ -1,4 +1,4 @@
-FROM ubuntu:jammy
+FROM ubuntu:focal
 LABEL authors="chlee-rdv"
 ARG DEBIAN_FRONTEND=noninteractive
 WORKDIR /root

@@ -5,12 +5,12 @@ ENVS="--env=QT_X11_NO_MITSHM=1
       --env=DISPLAY=:9
       --device=/dev/dri:/dev/dri"
 
-         #--volume=/home/$USER/rdv_hermai_ws/data/backup:/root/catkin_ws/src/rdv_amr_3d/data/backup:rw"
 XSOCK=/tmp/.X11-unix
 XAUTH=/root/.Xauthority
 VOLUMES="--volume=$XSOCK:$XSOCK:rw
          --volume=$XAUTH:/root/.Xauthority:rw
-         --volume=/dev:/dev:ro"
+         --volume=/dev:/dev:ro
+         --volume=/home/$USER/rdv_hermai/shared_rdv/rdv_map/backup:/home/rdv/catkin_ws/src/shared_rdv/rdv_map/backup:rw"
 
 
     #--entrypoint /bin/bash \
